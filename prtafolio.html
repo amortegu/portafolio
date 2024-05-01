@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Contadora y Front-End</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonte del Proyecto Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor-header">    
+        <header>
+            <div class="logo">
+                <h2>J<span>M</span></h2>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio">HOME</a></li>
+                    <li><a href="#sobremi">SOBRE MI</a></li>
+                    <li><a href="#servicios">SERVICIOS</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="responsiveMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+    </div>   
+
+    <main>
+        <section id="inicio" class="inicio">
+            <div class="contenido-banner">
+                <div class="contanedor-img">
+                    <img src="jes.jpg" alt="">
+                </div>
+                <h1>Jesica Estefania Martinez Amortegui</h1>
+                <h2>Contadora y Desarrolladora Front-End: Transformando Datos en Experiencias Visuales</h2>
+                <div class="redes">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+        </section> 
+
+        <section id="sobremi" class="sobremi">
+            <div class="contenido-seccion">
+                <h2>Sobre Mí</h2>
+                <p><span>Hola, soy Jesica Martinez</span> contadora pública apasionada por el mundo financiero y entusiasta del desarrollo front-end. Mi trayectoria en contabilidad me ha brindado una sólida base en análisis financiero y gestión de datos, mientras que mi estudio de programación me ha impulsado hacia la creación de experiencias web dinámicas y visualmente atractivas. Me encanta combinar mi habilidad para interpretar datos con mi creatividad para diseñar soluciones innovadoras. Con un enfoque meticuloso en la precisión y la estética, aspiro a crear experiencias digitales que no solo informen, sino que también cautiven a los usuarios. <strong>¡Bienvenidos a mi mundo donde los números y el diseño se encuentran!"</strong> </p>
+                <div class="fila">
+                    <div class="col">
+                        <h3>Datos personales</h3>
+                        <ul>
+                            <li>
+                                <strong>Cumpleaños</strong>
+                                26/12/1996
+                            </li>
+                            <li>
+                                <strong>Telefono</strong> 313 2091048
+                            </li>
+                            <li>
+                                <strong>Email</strong>
+                                jes.estefaniaamortegui@gmail.com
+                            </li>
+                            <li>
+                                <strong>Cargo</strong> FREELANCE
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>INTERESES</h3>
+                        <div class="contenedor-intereses">
+                            <div class="interes">
+                                <i class="fas fa-plane-departure"></i>
+                                <span>VIAJAR</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fas fa-book"></i>                            
+                                <span>LIBROS</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fas fa-leaf"></i>
+                                <span>NATURALEZA</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fas fa-mountain"></i>
+                                <span>SENDERISMO</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fas fa-utensils"></i>
+                                <span>GASTRONOMIA</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fab fa-apple"></i>
+                                <span>MAC OS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fab fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </section>
+
+        <section class="progreso">
+            <h2 class="titulo_habilidadesyEstudio">HABILIDADES</h2>
+            <ul class="lista-habilidades">
+                <li>
+                    <span class="skill-name">Análisis Financiero</span>
+                    <div class="progress-bar" data-percent="80%">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </li>
+                <li>
+                    <span class="skill-name">Gestión de Datos</span>
+                    <div class="progress-bar" data-percent="60%">
+                        <div class="progress" style="width: 60%;"></div>
+                    </div>
+                </li>
+                <li>
+                    <span class="skill-name"> Pensamiento analítico</span>
+                    <div class="progress-bar" data-percent="80%">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </li>
+                <li>
+                    <span class="skill-name"> Programación Front-End</span>
+                    <div class="progress-bar" data-percent="50%">
+                        <div class="progress" style="width: 50%;"></div>
+                    </div>
+                </li>
+            </ul>
+        </section>   
+        <section class="Conocimientos">
+            <div class="slider">
+                <div class="slide-track">
+                    <!-- Aquí colocamos las diapositivas repetidas -->
+                    <div class="slide"><img src="1slide.png" alt=""></div>
+                    <div class="slide"><img src="2slide.png" alt=""></div>
+                    <div class="slide"><img src="3slide.jpg" alt=""></div>
+                    <div class="slide"><img src="4slide.png" alt=""></div>
+                    <div class="slide"><img src="5slide.png" alt=""></div>
+                    <div class="slide"><img src="6slide.png" alt=""></div>
+                    <div class="slide"><img src="7slide.png" alt=""></div>
+                    <!-- Aquí colocamos las diapositivas repetidas -->
+                    <div class="slide"><img src="1slide.png" alt=""></div>
+                    <div class="slide"><img src="2slide.png" alt=""></div>
+                    <div class="slide"><img src="3slide.jpg" alt=""></div>
+                    <div class="slide"><img src="4slide.png" alt=""></div>
+                    <div class="slide"><img src="5slide.png" alt=""></div>
+                    <div class="slide"><img src="6slide.png" alt=""></div>
+                    <div class="slide"><img src="7slide.png" alt=""></div>
+                    <div class="slide"><img src="1slide.png" alt=""></div>
+                    <div class="slide"><img src="2slide.png" alt=""></div>
+                    <div class="slide"><img src="3slide.jpg" alt=""></div>
+                    <div class="slide"><img src="4slide.png" alt=""></div>
+                    <div class="slide"><img src="5slide.png" alt=""></div>
+                    <div class="slide"><img src="6slide.png" alt=""></div>
+                    <div class="slide"><img src="7slide.png" alt=""></div>
+                    <div class="slide"><img src="1slide.png" alt=""></div>
+                    <div class="slide"><img src="2slide.png" alt=""></div>
+                    <div class="slide"><img src="3slide.jpg" alt=""></div>
+                    <div class="slide"><img src="4slide.png" alt=""></div>
+                    <div class="slide"><img src="5slide.png" alt=""></div>
+                    <div class="slide"><img src="6slide.png" alt=""></div>
+                    <div class="slide"><img src="7slide.png" alt=""></div>
+                    <div class="slide"><img src="1slide.png" alt=""></div>
+                    <div class="slide"><img src="2slide.png" alt=""></div>
+                    <div class="slide"><img src="3slide.jpg" alt=""></div>
+                    <div class="slide"><img src="4slide.png" alt=""></div>
+                    <div class="slide"><img src="5slide.png" alt=""></div>
+                    <div class="slide"><img src="6slide.png" alt=""></div>
+                    <div class="slide"><img src="7slide.png" alt=""></div>
+                    <!-- Repetimos las diapositivas para asegurarnos de que siempre haya suficientes -->
+                    <!-- Repite las diapositivas según sea necesario -->
+                </div>
+            </div>
+        </section>
+        <section id="servicios">
+            <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+            <div class="fila">
+                <div class="servicio">
+                    <span class="icono"><i class="fab fa-app-store"></i></span>
+                    <h4>Desarrollo de Aplicaciones Contables Personalizadas</h4>
+                    <hr>
+                    <ul class="servicios-tag">
+                        <li>APP</li>
+                        <li>CONTABILIDAD</li>
+                        <li>SEO</li>
+                    </ul>
+                    <p>Servicio para diseñar y desarrollar aplicaciones contables personalizadas para empresas que necesitan soluciones específicas para sus necesidades financieras.</p>
+                </div>
+                <div class="servicio">
+                    <span class="icono"><i class="fas fa-cash-register"></i></span>
+                    <h4>Desarrollo de Sitios Web y Plataformas de E-commerce</h4>
+                    <hr>
+                    <ul class="servicios-tag">
+                        <li>WEB</li>
+                        <li>CONTABILIDAD</li>
+                        <li>E-COMERCE</li>
+                    </ul>
+                    <p>Diseñar y desarrollar sitios web y plataformas de e-commerce para empresas que desean vender sus productos o servicios en línea. Integrando funcionalidades contables.</p>
+                </div>
+                <div class="servicio">
+                    <span class="icono"><i class="fas fa-coins"></i></span>
+                    <h4>Consultoría en Procesos Financieros Automatizados</h4>
+                    <hr>
+                    <ul class="servicios-tag">
+                        <li>WEB</li>
+                        <li>CONTABILIDAD</li>
+                        <li>FINANCE</li>
+                    </ul>
+                    <p>Ofrecer consultoría en procesos financieros automatizados, ayudando a empresas a identificar áreas donde pueden mejorar la eficiencia y reducir los errores mediante la automatización de tareas contables y financieras.</p>
+                </div>
+            </div>
+        </section>
+
+        <form>
+            <h1>CONTACTO</h1>
+            <label for="nombreapellido">Nombre y apellido</label>
+            <input type="text" id="nombreapellido" class="input-padron"required>
+
+            <label for="correoelectronico">Correo Electronico</label>
+            <input type="email" id="correoelectronico"class="input-padron" required placeholder="email@dominio.com">
+
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono"class="input-padron" required placeholder="(xx) xxx xxxx">
+
+            <label for="mensaje">Mensaje</label>
+            <textarea name="Mensaje" id="mensaje" cols="70" rows="10"class="input-padron" required></textarea>
+            <fieldset>
+                <legend>¿Como le gustaria que lo contactemos?</legend>
+
+                <label for="radio-telefono"><input type="radio" name="contacto" value="Telefono" id="radio-telefono">Telefono</label>   
+
+                <label for="radio-email"> <input type="radio" name="contacto" value="Email" id="radio-email"> Email</label>   
+
+                <label for="radio-whatsapp"><input type="radio" name=contacto value="WhatsApp" id="radio-whatsapp" checked>WhatsApp</label>   
+
+            </fieldset>
+
+            <input type="submit" value="Enviar formulario" class="Enviar">
+
+        </form>
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados - 2024</p>
+        <div class="redes">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="far fa-envelope"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

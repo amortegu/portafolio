@@ -1,0 +1,664 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #04151e; /* Color oscuro de fondo */
+}
+
+/*MENU*/
+.contenedor-header{
+    background: transparent;
+    position: absolute;
+    /*espacio completo de las palabres*/
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    padding: 30px; /* Ajuste del padding */
+    max-width: 1100vw; 
+    margin: auto; 
+}
+.contenedor-header header nav ul li a {
+    color: antiquewhite;
+    margin: 0 15px;
+    padding: 3px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.contenedor-header header{
+    max-width: 1100vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-size: 26px;
+    color: #4caf50;
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: antiquewhite;
+    margin: 0 15px;
+    padding: 3px;
+    transition: 5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover {
+    color: #1CB698; /* Color al pasar el cursor */
+}
+.nav-responsive{
+    background-color: #1CB698;
+    color: aliceblue;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.logo span {
+    color: aqua;
+}
+
+.logo h2 {
+    color: rgb(136, 43, 43);
+}
+/*SECCION INICIO*/
+.inicio{
+    background: linear-gradient(to bottom, rgba(30, 35, 38, 0.7), rgba(30, 35, 38, 0.9)), url(fondo\ rec.jpg); /* Ajuste de la opacidad */
+    background-size: cover;
+    background-position: center;
+    /*ancho de la imagen fondo*/
+    height: 25vw;
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+}
+.inicio .contenido-banner{
+    padding: 10px;
+    background-color: rgba(30, 35, 38, 0.7); /* Ajuste de la opacidad */
+    max-width: 250px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.inicio .contenido-banner img{
+    margin-top: 0;
+    border: 18px solid #1CB698;
+    display: block;
+    width: 70%;
+    margin: auto;
+    border-radius: 5%;
+}
+.inicio .contenido-banner h1{
+    margin-top: 10px;
+    font-size: 22px;
+
+}
+.inicio .contenido-banner h2{
+    font-size: 10px;
+    font-weight: normal;
+    color: #1CB698;
+}
+
+.inicio .contenido-banner .redes a{
+    color: antiquewhite;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid antiquewhite;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 20px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.inicio .contenido-banner .redes a :hover{
+    background-color: #089c19;
+}
+.inicio .contenido-banner .redes a :hover .seleccionado{
+    color: #000;
+}
+.sobremi {
+    background-color: #04151e;
+    color: antiquewhite;
+    padding: 50px 20px;
+
+}
+.sobremi .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+.sobremi h2{
+    font-size: 48px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 20px 0;
+}
+.sobremi .contenido-seccion p {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.sobremi .contenido-seccion p span{
+    color: #1CB698;
+    font-weight: bold;
+}
+.sobremi .fila {
+    display: flex;
+}
+.sobremi.fila .col  {
+    width: 50%;
+}
+.sobremi .fila .col h3 {
+    font-size: 28px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 25px;
+    
+}
+.sobremi.fila .col ul{
+    list-style: none;
+}
+.sobremi .fila .col ul li{
+    margin: 20px 0;
+}
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color: #1CB698;
+    width: 130px;
+
+}
+.sobremi .fila .col ul li span{
+    background-color: #1CB698;
+    padding: 35px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.sobremi .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.sobremi .fila .col .contenedor-intereses .interes{
+    width: 125px;
+    height: 80px;
+    background-color: #252a2e ;
+    border-radius: 10px;
+    margin: 0 30px 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .5s;
+}
+.sobremi .fila .col .contenedor-intereses .interes:hover{
+    background-color: #1CB698;
+}
+.sobremi .fila .col .contenedor-intereses .interes i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.sobremi button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid antiquewhite;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22 px;
+    font-size: 16px;
+    color: antiquewhite;
+    position: relative;
+    z-index: 10;
+
+}
+.sobremi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: .1;
+    transition: 1s;
+}
+.sobremi button:hover .overlay{
+    width: 100%;
+}
+.titulo_habilidadesyEstudio {
+    text-align: right; /* Centra el texto */
+    font-size: 35px;
+    color:antiquewhite;
+    overflow: hidden;
+    margin: 0 30px 20px 0;
+    
+}
+.progreso {
+    background-color: #04151e;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 20px; /* Agrega espacio entre los elementos */
+}
+
+.lista-habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+}
+
+.lista-habilidades li {
+    display: flex;
+    width: calc(13% - 20px); /* Establece el ancho de cada cuadro */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid antiquewhite;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.progreso li {
+    width: calc(33.33% - 10px); /* Establece el ancho de cada cuadro */
+    margin: 0 30px 20px 0;
+    text-align: center;
+    padding: 20px; /* Agrega espacio alrededor de los cuadros */
+    box-sizing: border-box;
+    border: 2px solid #1CB698;
+    border-radius: 20px;
+    margin-bottom: 20px; /* Agrega margen inferior */
+}
+
+.progreso li:hover {
+    border-color: #c78c19;
+}
+
+.progreso li:active {
+    border-color: #18a628;
+}
+
+.progreso h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: antiquewhite;
+}
+
+.progreso li:hover h2 {
+    font-size: 33px;
+}
+
+.skill-name {
+    display: flex;
+    display: inline-block;
+    flex: 1;
+    font-weight: bold;
+    margin-right: 40px;
+    text-align: center;
+    color: antiquewhite;
+}
+
+.progress-bar {
+    flex: 3;
+    position: relative;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    color: antiquewhite;
+    font-size: 12px;
+    font-size: 16px; /* Ajustar el tamaño del texto */
+    font-weight: bold; /* Hacer el texto en negrita */
+
+}
+
+.progress-bar::after {
+    content: attr(data-percent);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: antiquewhite;
+    font-size: 12px;
+    font-size: 16px; /* Ajustar el tamaño del texto */
+    font-weight: bold; /* Hacer el texto en negrita */
+}
+
+.progress {
+    height: 100%;
+    background-color: #4caf50;
+}
+.slider {
+    width: 80vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    background-color: #04151e; /* Agrega el color de fondo oscuro aquí */
+
+}
+
+.slider .slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: fit-content;
+}
+
+.slider .slide {
+    width: 100px;
+    margin: 0 10px; /* Ajustar la distancia entre los logos */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Alinear verticalmente los logos */
+}
+
+.slider .slide img {
+    width: 70%; /* Ajustar el tamaño de los logos */
+}
+
+/* Animación ajustada para un desplazamiento continuo */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* Desplazamiento continuo */
+    }
+}#servicios {
+    background-color: #04151e; /* Agrega el color de fondo oscuro aquí */
+    padding: 100px 15px;
+    text-align: center;
+}
+
+.titulo-seccion {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #e5eaec;
+    text-decoration-thickness: 5px;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos al centro horizontalmente */
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+.servicio {
+    flex: 1;
+    background-color: antiquewhite;
+    padding: 30px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: 0.5s; /* Reducido el tiempo de transición */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicio:hover {
+    box-shadow: 5px 5px 10px #04151e, -5px -5px 10px #081b26;
+}
+
+.servicio h4 {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.servicio .icono {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 70%;
+    background-color: rgb(207, 148, 72);
+    padding: 10px;
+    margin-bottom: 35px;
+    color: #04151e;
+    font-size: 40px;
+}
+
+.servicio hr {
+    margin: auto;
+    color: #52a1cf;
+    margin-bottom: 35px;
+}
+
+.servicio ul {
+    list-style: none;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 2px;
+    padding: 5px 10px;
+
+}
+.servicio li{
+    font-size: 18px; /* Tamaño del texto */
+    display: inline-block;
+    width: auto; /* Ancho automático según el contenido */
+    height: auto; /* Altura automática según el contenido */
+    background-color: #1CB698;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    color: antiquewhite;
+
+}
+.servicio p {
+    
+    align-content: start;
+    font-size: 14px;
+    line-height: 22px;
+}
+/* Estilos para el formulario de contacto */
+form {
+    background-color: #04151e; /* Agrega el color de fondo oscuro aquí */
+    max-width: 600px; /* Ajusta el ancho máximo del formulario según tu diseño */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #04151e; /* Color de fondo similar al de la sección de habilidades */
+    color: antiquewhite; /* Color de texto similar al de la sección de habilidades */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave similar a la de la sección de habilidades */
+    height: 100vh; /* Ajusta el alto del formulario al 100% del alto de la ventana */
+}
+
+form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color:antiquewhite; /* Color de título similar al de los indicadores de habilidades */
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color:antiquewhite; /* Color de texto similar al de los indicadores de habilidades */
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #1CB698; /* Color de borde similar al de los indicadores de habilidades */
+    border-radius: 5px;
+    background-color: #04151e; /* Color de fondo similar al de la sección de habilidades */
+    color: antiquewhite;
+}
+
+form textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+form fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+form legend {
+    font-weight: bold;
+    color: #c5d0ce; /* Color de texto similar al de los indicadores de habilidades */
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+form .checkbox {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form .Enviar {
+    background-color: #1CB698; /* Color de fondo similar al de los indicadores de habilidades */
+    color: antiquewhite;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form .Enviar:hover {
+    background-color: #089c19; /* Cambia el color al pasar el cursor */
+}
+.footer{
+    text-align: center;
+    background-color: #c5d0ce;
+    padding: 30px 0;
+    margin-left: 40%;
+
+}
+.footer P{
+    color: #c5d0ce;
+    text-decoration: none;
+    display: inline-block;
+    margin: 45px;
+    font-size: 26px;
+}
+/* Media Query para pantallas pequeñas */
+@media only screen and (max-width: 768px) {
+    /* Estilos específicos para pantallas pequeñas */
+    .contenedor-header header nav ul {
+      display: none; /* Oculta el menú en pantallas pequeñas */
+    }
+    .nav-responsive {
+      display: flex; /* Muestra el menú hamburguesa en pantallas pequeñas */
+    }
+    .contenedor-header header {
+      flex-direction: row; /* Alinea los elementos del header verticalmente */
+      align-items: flex-end; /* Centra los elementos horizontalmente */
+    }
+    .inicio {
+      height: 320px; /* Redimensiona la sección de inicio en pantallas pequeñas */
+    }
+    .inicio .contenido-banner {
+      max-width: 45%; /* Redimensiona el contenido del banner en pantallas pequeñas */
+    }
+    .inicio .contenido-banner img {
+      width: 45%; /* Ajusta el ancho de la imagen del banner al 100% */
+    }
+    .sobremi h2 {
+        font-size: 32px; /* Ajusta el tamaño del título "Sobre Mí" en pantallas pequeñas */
+    }
+    .sobremi .contenido-seccion {
+      padding: 20px; /* Ajusta el padding de la sección "Sobre Mí" en pantallas pequeñas */
+    }
+    .sobremi .fila {
+        flex-direction: column; /* Cambiar a disposición de columna */
+    }
+
+    .sobremi .fila .col {
+        width: 100%; /* Ancho completo para ocupar toda la pantalla */
+        margin-bottom: 5px; /* Ajuste del margen inferior */
+    }
+    .lista-habilidades li {
+        width: 100%; /* Ancho completo para ocupar toda la pantalla */
+    }
+
+    .progress-bar {
+        width: 100%; /* Ajustar el ancho de la barra de progreso al 100% del contenedor */
+    }
+
+    .servicio {
+    display: inline-block; /* Permite que los elementos estén en la misma línea */
+    margin-right: 20px; /* Margen entre los elementos (ajusta según sea necesario) */
+    }
+    .servicio -scroll {
+    overflow-x: auto; /* Permite el scroll horizontal si el contenido excede el ancho del contenedor */
+    white-space: nowrap; /* Evita que los elementos se envuelvan a la siguiente línea */
+    }
+}
+  
+  /* Media Query para tabletas */
+  @media only screen and (max-width: 1024px) {
+      /* Estilos específicos para pantallas pequeñas */
+      .contenedor-header header nav ul {
+        display: none; /* Oculta el menú en pantallas pequeñas */
+      }
+      .nav-responsive {
+        display: flex; /* Muestra el menú hamburguesa en pantallas pequeñas */
+      }
+      .contenedor-header header {
+        flex-direction: row; /* Alinea los elementos del header verticalmente */
+        align-items: flex-end; /* Centra los elementos horizontalmente */
+      }
+      .inicio {
+        height: 350px; /* Redimensiona la sección de inicio en pantallas pequeñas */
+      }
+      .inicio .contenido-banner {
+        max-width: 45%; /* Redimensiona el contenido del banner en pantallas pequeñas */
+      }
+      .inicio .contenido-banner img {
+        width: 45%; /* Ajusta el ancho de la imagen del banner al 100% */
+      }
+      .sobremi h2 {
+          font-size: 32px; /* Ajusta el tamaño del título "Sobre Mí" en pantallas pequeñas */
+      }
+      .sobremi .contenido-seccion {
+        padding: 20px; /* Ajusta el padding de la sección "Sobre Mí" en pantallas pequeñas */
+      }
+      .sobremi .fila {
+          flex-direction: column; /* Cambiar a disposición de columna */
+      }
+  
+      .sobremi .fila .col {
+          width: 100%; /* Ancho completo para ocupar toda la pantalla */
+          margin-bottom: 5px; /* Ajuste del margen inferior */
+      }
+      .lista-habilidades li {
+          width: 100%; /* Ancho completo para ocupar toda la pantalla */
+      }
+  
+      .progress-bar {
+          width: 100%; /* Ajustar el ancho de la barra de progreso al 100% del contenedor */
+      }
+  
+      .servicio {
+      display: inline-block; /* Permite que los elementos estén en la misma línea */
+      margin-right: 20px; /* Margen entre los elementos (ajusta según sea necesario) */
+     }
+      .servicio -scroll {
+      overflow-x: auto; /* Permite el scroll horizontal si el contenido excede el ancho del contenedor */
+      white-space: nowrap; /* Evita que los elementos se envuelvan a la siguiente línea */
+     }
+  }
+  
